@@ -10,9 +10,3 @@ class Migration(migrations.Migration):
         ('articles', '0001_initial'),
     ]
 
-    operations = [
-        migrations.RemoveField(
-            model_name='article',
-            name='tags',
-        ),
-    ]
