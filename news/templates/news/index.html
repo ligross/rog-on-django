@@ -1,82 +1,23 @@
-{% load staticfiles %}
+{% extends "base.html" %}
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Language" content="ru" />
-<title>Reign of Geeks</title>
-<link rel="stylesheet" type="text/css" href="{% static 'news/main.css' %}" />
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script type="text/javascript" src="{% static 'news/js/main.js' %}"></script>
+{% block content %}
 
-<body>
-	<div class="right"></div>
-	<div class="topMenu" id="tabs">
-		<ul>
-			<li>
-				<a href="javascript:tabSwitch('news');" id="tab_news" class="active">Главная</a>
-			</li>
-			<li>
-				<a href="javascript:tabSwitch('articles');" id="tab_articles">Статьи</a>
-			</li>
-			<li>
-				<a href="javascript:tabSwitch('db');" id="tab_db">База знаний</a>
-			</li>
-			<li>
-				<a href="javascript:tabSwitch('video');" id="tab_video">Видео</a>
-			</li>
-			<li>
-				<a href="javascript:tabSwitch('gallery');" id="tab_gallery">Галерея</a>
-			</li>
-		</ul>
-	</div>
-    <div id="content_news" class="tab-content">
-		<div class="centerTop"></div>
-		<div class="center">
-                {% if latest_news_list %}
-                    {% for news in latest_news_list %}
-                    <div class="news">
-                        <p class="date">{{ news.pub_date }}</p>
-                        <h2><a href="/news/{{ news.id }}/">{{ news.news_title }}</a></h2>
-                        <div class="newsInfo">
-                            {% if news.image %}
-                                 <img src="{{ MEDIA_ROOT }}{{ news.image.url }}">
-                            {% endif %}
-					        {{ news.news_text }}
-					        <a href="/news/{{ news.id }}/">Читать дальше</a>
-					        <div style="clear:both;"></div>
-				        </div>
-                    </div>
-                    {% endfor %}
-                {% else %}
-                    <p>Нет доступных новостей.</p>
-                {% endif %}
-            <div style="clear:both;"></div>
-		</div>
-	</div>
-	<div id="content_articles" class="tab-content">
-		<div class="centerTop"></div>
-		<div class="center">
-            <div style="clear:both;"></div>
-		</div>
-	</div>
-	<div id="content_db" class="tab-content">
-		<div class="centerTop"></div>
-		<div class="center">
-            <div style="clear:both;"></div>
-		</div>
-	</div>
-	<div id="content_video" class="tab-content">
-		<div class="centerTop"></div>
-		<div class="center">
-            <div style="clear:both;"></div>
-		</div>
-	</div>
-	<div id="content_gallery" class="tab-content">
-		<div class="centerTop"></div>
-		<div class="center">
-            <div style="clear:both;"></div>
-		</div>
-	</div>
-	<div id="back-top" title="Наверх">
-		<img src="{% static 'news/images/scroll.png' %}" onclick="scroll()">
-	</div>
-</body>
+{% if latest_news_list %}
+    {% for news in latest_news_list %}
+        <div class="news">
+            <p class="date">{{ news.pub_date }}</p>
+            <h2><a href="/news/{{ news.id }}/">{{ news.news_title }}</a></h2>
+            <div class="newsInfo">
+            {% if news.image %}
+                <img src="{{ MEDIA_ROOT }}{{ news.image.url }}">
+            {% endif %}
+				{{ news.news_text|truncatechars:200}}...
+				<a href="/news/{{ news.id }}/">Читать дальше</a>
+				<div style="clear:both;"></div>
+			</div>
+        </div>
+    {% endfor %}
+    {% else %}
+        <p>Нет доступных новостей.</p>
+    {% endif %}
+{% endblock %}

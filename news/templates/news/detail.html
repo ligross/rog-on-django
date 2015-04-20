@@ -1,43 +1,8 @@
-{% load staticfiles %}
+{% extends "base.html" %}
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Language" content="ru" />
-<title>Reign of Geeks</title>
-<link rel="stylesheet" type="text/css" href="{% static 'news/main.css' %}" />
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script type="text/javascript" src="{% static 'news/js/main.js' %}"></script>
+{% block content %}
+    <h1>{{ news.news_title }}</h1>
+    {{ news.news_text }}
+{% endblock %}
 
-<body>
-	<div class="right"></div>
-	<div class="topMenu" id="tabs">
-		<ul>
-			<li>
-				<a href="javascript:tabSwitch('news');" id="tab_news" class="active">Главная</a>
-			</li>
-			<li>
-				<a href="javascript:tabSwitch('articles');" id="tab_articles">Статьи</a>
-			</li>
-			<li>
-				<a href="javascript:tabSwitch('db');" id="tab_db">База знаний</a>
-			</li>
-			<li>
-				<a href="javascript:tabSwitch('video');" id="tab_video">Видео</a>
-			</li>
-			<li>
-				<a href="javascript:tabSwitch('gallery');" id="tab_gallery">Галерея</a>
-			</li>
-		</ul>
-	</div>
-    <div id="content_news" class="tab-content">
-		<div class="centerTop"></div>
-		<div class="center">
-            <h1>{{ news.news_title }}</h1>
-            {{ news.news_text }}
-            <div style="clear:both;"></div>
-		</div>
-	</div>
-	<div id="back-top" title="Наверх">
-		<img src="{% static 'news/images/scroll.png' %}" onclick="scroll()">
-	</div>
-</body>
 
