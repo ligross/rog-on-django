@@ -71,9 +71,13 @@ body {
   padding: 20px;
   background-color: rgba(255,255,255,0.6);
   color: #000;
+
   margin-bottom: 200px;
 }
 
+.well {
+    background-color: rgba(240, 240, 240, 0.5)!important;
+}
 .centerTop {
   width: 70%;
   height: 200px;

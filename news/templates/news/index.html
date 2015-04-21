@@ -4,17 +4,23 @@
 
 {% if latest_news_list %}
     {% for news in latest_news_list %}
-        <div class="news">
+         <div class="panel panel-default">
+      <div class="panel-heading">
+
             <p class="date">{{ news.pub_date }}</p>
-            <h2><a href="/news/{{ news.id }}/">{{ news.news_title }}</a></h2>
+            <h3><a href="/news/{{ news.id }}/">{{ news.news_title }}</a></h3>
+      </div>
             <div class="newsInfo">
             {% if news.image %}
                 <img src="{{ MEDIA_ROOT }}{{ news.image.url }}">
             {% endif %}
+            <div class="panel-body">
 				{{ news.news_text|truncatechars:200}}...
 				<a href="/news/{{ news.id }}/">Читать дальше</a>
 				<div style="clear:both;"></div>
+                </div>
 			</div>
+         <div class="panel-footer">Panel Footer</div>
         </div>
     {% endfor %}
     {% else %}
