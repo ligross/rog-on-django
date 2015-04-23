@@ -1,8 +1,24 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h3>{{ news.news_title }}</h3>
-    {{ news.news_text }}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>{{ news.news_title }}</h3>
+        </div>
+        <p class="date">{{ news.pub_date }}</p>
+        <div class="newsInfo">
+            <div class="panel-body">
+                {{ news.news_text }}
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            Источник: <a href="{{ news.link_to_original }}">{{ news.link_to_original }}</a>
+        </div>
+    </div>
+
+
+
 {% endblock %}
 
 

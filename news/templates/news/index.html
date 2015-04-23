@@ -4,23 +4,24 @@
 
 {% if latest_news_list %}
     {% for news in latest_news_list %}
-         <div class="panel panel-default">
-      <div class="panel-heading">
-
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3><a href="/news/{{ news.id }}/">{{ news.news_title }}</a></h3>
+            </div>
             <p class="date">{{ news.pub_date }}</p>
-            <h3><a href="/news/{{ news.id }}/">{{ news.news_title }}</a></h3>
-      </div>
             <div class="newsInfo">
-            {% if news.image %}
-                <img src="{{ MEDIA_ROOT }}{{ news.image.url }}">
-            {% endif %}
-            <div class="panel-body">
-				{{ news.news_text|truncatechars:200}}...
-				<a href="/news/{{ news.id }}/">Читать дальше</a>
-				<div style="clear:both;"></div>
+                {% if news.image %}
+                    <img src="{{ MEDIA_ROOT }}{{ news.image.url }}">
+                {% endif %}
+                <div class="panel-body">
+                    {{ news.news_text|truncatechars:200}}...
+                    <a href="/news/{{ news.id }}/">Читать дальше</a>
+                    <div style="clear:both;"></div>
                 </div>
 			</div>
-         <div class="panel-footer">Источник: {{ news.link_to_original }}</div>
+            <div class="panel-footer">
+                Источник: <a href="{{ news.link_to_original }}">{{ news.link_to_original }}</a>
+            </div>
         </div>
     {% endfor %}
     {% else %}
