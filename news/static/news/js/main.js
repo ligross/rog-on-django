@@ -1,23 +1,16 @@
-function initTabs() {
-    if (window.location.host.hash != ('' || undefined)) tabSwitch(window.location.hash);
-    $('#content_articles').hide();
-    $('#content_db').hide();
-    $('#content_video').hide();
-    $('#content_gallery').hide();
-};
+$(function() {
+    var url = window.location;
 
-function tabSwitch(nb) {
-    window.location.hash = nb;
-    $('#tabs a').removeClass('active');
-    $('div.tab-content').hide();
-    $('#tab_' + nb).addClass('active');
-    $('#content_' + nb).show();
-};
+// Will only work if string in href matches with location
+    $('nav.li a[href="' + url + '"]').parent().addClass('active');
 
-$(function() { initTabs(); });
-
+// Will also work for relative and absolute hrefs
+    $('nav.li a').filter(function () {
+        return this.href == url;
+    }).parent().addClass('active');
 // hide #back-top first
-$("#back-top").hide();
+    $("#back-top").hide();
+})
 
 // fade in #back-top
 $(window).scroll(function () {
