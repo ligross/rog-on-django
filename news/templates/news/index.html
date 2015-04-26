@@ -11,6 +11,7 @@
                 <h3><a href="/news/{{ news.id }}/">{{ news.news_title }}</a></h3>
             </div>
             <p class="date">{{ news.pub_date }}</p>
+            <div class="addthis_sharing_toolbox"></div>
             <div class="newsInfo">
                 {% if news.image %}
                     <img src="{{ MEDIA_ROOT }}{{ news.image.url }}">
