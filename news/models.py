@@ -12,5 +12,8 @@ class News(models.Model):
         return self.news_title
 
 
+class NewsImage(models.Model):
+    news = models.ForeignKey(News, related_name='images')
+    image = models.ImageField()
 
 

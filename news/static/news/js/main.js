@@ -2,11 +2,11 @@ $(function() {
     var url = window.location;
 
 // Will only work if string in href matches with location
-    $('nav.li a[href="' + url + '"]').parent().addClass('active');
+    $('nav.li a[href="' + url.pathname + '"]').parent().addClass('active');
 
 // Will also work for relative and absolute hrefs
     $('nav.li a').filter(function () {
-        return this.href == url;
+        return this.href == url.pathname;
     }).parent().addClass('active');
 // hide #back-top first
     $("#back-top").hide();

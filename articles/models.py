@@ -9,3 +9,8 @@ class Article(models.Model):
 
     def __str__(self):
         return self.article_title
+
+
+class ArticleImage(models.Model):
+    article = models.ForeignKey(Article, related_name='images')
+    image = models.ImageField()
