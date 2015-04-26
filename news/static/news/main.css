@@ -129,6 +129,14 @@ body {
 #back-top img:hover{opacity: 1;}
 /* END Кнопка ВВЕРХ*/
 
+.addthis_sharing_toolbox {
+    margin: -37px 8px 0 0;
+    float: right;
+}
+.addthis_sharing_toolbox #atstbx a {
+    border-radius: 5px;
+}
+
 .carousel-control {
   display: none;
 }
