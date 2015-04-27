@@ -17,7 +17,7 @@
                     <img src="{{ MEDIA_ROOT }}{{ news.image.url }}">
                 {% endif %}
                 <div class="panel-body">
-                    {{ news.news_text|truncatechars:200}}...
+                    {{ news.news_text|truncatechars:200|safe}}...
                     <a href="/news/{{ news.id }}/">Читать дальше</a>
                     <div style="clear:both;"></div>
                 </div>

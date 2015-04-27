@@ -9,7 +9,7 @@ class News(models.Model):
     pub_date = models.DateTimeField('date published')
 
     def __str__(self):
-        return self.news_title
+        return unicode(self.news_title)
 
 
 class NewsImage(models.Model):

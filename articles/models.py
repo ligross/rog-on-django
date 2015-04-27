@@ -8,7 +8,7 @@ class Article(models.Model):
     pub_date = models.DateTimeField('date published')
 
     def __str__(self):
-        return self.article_title
+        return unicode(self.article_title)
 
 
 class ArticleImage(models.Model):

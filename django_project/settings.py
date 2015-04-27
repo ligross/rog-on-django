@@ -30,6 +30,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
+    'suit',
+    'suit_ckeditor',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,7 +40,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'news',
     'articles',
-    'social_auth',
     'addthis'
 )
 
@@ -49,16 +50,6 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware'
-)
-
-SOCIAL_AUTH_PIPELINE = (
-    'social_auth.backends.pipeline.social.social_auth_user',
-    'social_auth.backends.pipeline.associate.associate_by_email',
-    'social_auth.backends.pipeline.user.get_username',
-    'social_auth.backends.pipeline.user.create_user',
-    'social_auth.backends.pipeline.social.associate_user',
-    'social_auth.backends.pipeline.social.load_extra_data',
-    'social_auth.backends.pipeline.user.update_user_details'
 )
 
 TEMPLATES = [
@@ -72,21 +63,11 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'social_auth.context_processors.social_auth_by_name_backends'
+                'django.core.context_processors.request',
             ],
         },
     },
 ]
-
-AUTHENTICATION_BACKENDS = (
-    'social_auth.backends.twitter.TwitterBackend',
-    'social_auth.backends.facebook.FacebookBackend',
-    'social_auth.backends.google.GoogleOAuthBackend',
-    'social_auth.backends.google.GoogleOAuth2Backend',
-    'social_auth.backends.google.GoogleBackend',
-    'social_auth.backends.contrib.vk.VKOAuth2Backend',
-    'django.contrib.auth.backends.ModelBackend',
-)
 
 ROOT_URLCONF = 'django_project.urls'
 
