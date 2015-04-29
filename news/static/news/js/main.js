@@ -1,16 +1,8 @@
 $(function() {
     var url = window.location;
+    $('#categories a[href="' + url.pathname + '"]').parent().addClass('active');
 
-// Will only work if string in href matches with location
-    $('nav.li a[href="' + url.pathname + '"]').parent().addClass('active');
-
-// Will also work for relative and absolute hrefs
-    $('nav.li a').filter(function () {
-        return this.href == url.pathname;
-    }).parent().addClass('active');
-// hide #back-top first
-    $("#back-top").hide();
-})
+});
 
 // fade in #back-top
 $(window).scroll(function () {
