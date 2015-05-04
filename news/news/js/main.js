@@ -1,1 +1,0 @@
-/home/django/django_project/news/static/news/js/main.js
