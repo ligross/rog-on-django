@@ -150,3 +150,101 @@ body {
   width: 100%;
   height: 300px!important;
 }
+
+.panel.panel-default table {
+  margin: 10px;
+}
+
+.panel.panel-default td {
+  border: 1px solid black;
+}
+
+.titleDb div {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    min-height: 75px;
+    text-align: center;
+}
+
+.source {
+  width: 15%;
+  min-width: 100px;
+}
+
+.titleDb {
+    width: 100%;
+}
+
+.imgsource {
+    width: 10%;
+    min-width: 130px;
+}
+
+.resources {
+    width: 20%;
+    min-width: 80px;
+}
+
+.mount {
+  width: 10%;
+  min-width: 110px;
+}
+
+.timeRessurection {
+  width: 10%;
+  min-width: 90px;
+}
+
+.locations {
+  width: 10%;
+  min-width: 170px;
+}
+
+.db {
+    width: 100%;
+    float: left;
+}
+
+.db div {
+    float: left;
+    border: 1px solid #ddd;
+    min-height: 150px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+@media (max-width: 1220px) {
+    .locations {
+        display:none;
+    }
+}
+
+@media (max-width: 900px) {
+    .timeRessurection {
+        display:none;
+    }
+}
+
+@media (max-width: 740px) {
+    .mount {
+        display:none;
+    }
+}
+
+@media (max-width: 570px) {
+    .source {
+        min-width: 85px;
+    }
+    .imgsource {
+        min-width: 120px;
+    }
+    .resources {
+        min-width: 75px;
+    }
+    .resurcesTable {
+        width: 112%;
+    }
+}

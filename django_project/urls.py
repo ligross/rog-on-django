@@ -17,6 +17,7 @@ urlpatterns = patterns(
     url(r'^admin/', include(admin.site.urls)),
     url(r'^news/', include('news.urls')),
     url(r'^articles/', include('articles.urls')),
+    url(r'^database/', include('database.urls')),
 )
 
 if settings.DEBUG:

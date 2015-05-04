@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}Ресурсы{% endblock %}
+
+{% block content %}
+    <div class="container">
+        {% if resources_list %}
+            {% for resource_node in resources_list %}
+
+                <h2>Ресурсы</h2>
+
+                <div class="resurcesTable">
+                    <div class="titleDb">
+                        <div class="source">Источник ресурса</div>
+                        <div class="imgsource">Изображение источника</div>
+                        <div class="resources">Ресурсы</div>
+                        <div class="mount">Количество</div>
+                        <div class="timeRessurection">Время респауна</div>
+                        <div class="locations">Местонахождение</div>
+                    </div>
+                    <div class="db">
+                        <div class="source">
+                            {{ resource_node.node_name }}
+                        </div>
+                        <div class="imgsource">
+                            {% if resource_node.node_image %}
+                                <img src="{{ MEDIA_ROOT }}{{ resource_node.node_image.url }}">
+                            {% endif %}
+                        </div>
+                        <div class="resources">
+                            {% for resource in resource_node.resource.all %}
+                                <img src="{{ MEDIA_ROOT }}{{ resource.resource_image.url }}">
+                            {% endfor %}
+                        </div>
+                        <div class="mount">
+                            {{ resource_node.node_yield }}
+                        </div>
+                        <div class="timeRessurection">
+                            {{ resource_node.node_respawn_time }}
+                        </div>
+                        <div class="locations">
+                            {{ resource_node.node_location }}
+                        </div>
+                    </div>
+
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Нет подходящих ресурсов.</p>
+        {% endif %}
+    </div>
+{% endblock %}
