@@ -15,6 +15,10 @@ class Article(models.Model):
     def __str__(self):
         return unicode(self.article_title)
 
+    def __unicode__(self):
+        return '%s' % self.article_title
+
+
 
 class ArticleImage(models.Model):
     article = models.ForeignKey(Article, related_name='images')

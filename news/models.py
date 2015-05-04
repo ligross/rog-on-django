@@ -16,6 +16,9 @@ class News(models.Model):
     def __str__(self):
         return unicode(self.news_title)
 
+    def __unicode__(self):
+        return '%s' % self.news_title
+
 
 class NewsImage(models.Model):
     news = models.ForeignKey(News, related_name='images')
