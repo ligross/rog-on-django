@@ -20,8 +20,6 @@ class ResourceNode(models.Model):
         verbose_name_plural = u'Источники ресурсов'
 
 
-
-
 class Resource(models.Model):
     resource_node = models.ForeignKey(ResourceNode, related_name='resource')
     resource_image = models.ImageField(u'Изображение ресурса')

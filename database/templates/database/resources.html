@@ -4,20 +4,20 @@
 
 {% block content %}
     <div class="container">
-        {% if resources_list %}
-            {% for resource_node in resources_list %}
+        <h2>Ресурсы</h2>
 
-                <h2>Ресурсы</h2>
+        <div class="resurcesTable">
+            <div class="titleDb">
+                <div class="source">Источник ресурса</div>
+                <div class="imgsource">Изображение источника</div>
+                <div class="resources">Ресурсы</div>
+                <div class="mount">Количество</div>
+                <div class="timeRessurection">Время респауна</div>
+                <div class="locations">Местонахождение</div>
+            </div>
+            {% if resources_list %}
+                {% for resource_node in resources_list %}
 
-                <div class="resurcesTable">
-                    <div class="titleDb">
-                        <div class="source">Источник ресурса</div>
-                        <div class="imgsource">Изображение источника</div>
-                        <div class="resources">Ресурсы</div>
-                        <div class="mount">Количество</div>
-                        <div class="timeRessurection">Время респауна</div>
-                        <div class="locations">Местонахождение</div>
-                    </div>
                     <div class="db">
                         <div class="source">
                             {{ resource_node.node_name }}
@@ -43,10 +43,11 @@
                         </div>
                     </div>
 
+
+                {% endfor %}
                 </div>
-            {% endfor %}
-        {% else %}
-            <p>Нет подходящих ресурсов.</p>
-        {% endif %}
+            {% else %}
+                <p>Нет подходящих ресурсов.</p>
+            {% endif %}
     </div>
 {% endblock %}
