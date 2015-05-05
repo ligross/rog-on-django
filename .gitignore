@@ -11,5 +11,6 @@ eggs
 log
 parts
 django_project/media
+media
 tmp
 .DS_Store
