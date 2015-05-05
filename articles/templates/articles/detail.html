@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Статьи{% endblock %}
+
+{% block content %}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>{{ article.article_title }}</h3>
+        </div>
+        <p class="date">{{ article.pub_date }}</p>
+        <div class="addthis_sharing_toolbox"></div>
+        <div class="newsInfo">
+            <div class="panel-body">
+                {{ article.article_text|safe }}
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            Автор: {{ article.article_author }}
+        </div>
+    </div>
+{% endblock %}
