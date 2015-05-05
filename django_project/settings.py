@@ -24,7 +24,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '188.166.122.161', 'reignofgeeks.ru']
 
 
 # Application definition
@@ -110,10 +110,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
-STATIC_ROOT = '/home/django/django_project/'
+STATIC_ROOT = '/home/django/django_project/static/'
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = '/home/django/django_project/media/'
+MEDIA_ROOT = '/home/django/django_project/django_project/media/'
 
 MEDIA_URL = '/media/'
 

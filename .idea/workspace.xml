@@ -2,13 +2,70 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87fc80d0-26a8-4505-bc3d-ae411c4f4521" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/news/images/background.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/suit/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/suit/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/suit/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/news/images/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/news/images/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/news/images/scroll.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles/migrations/0003_auto_20150504_1742.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/0003_auto_20150504_1742.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/news/bootstrap/css/bootstrap-responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/news/bootstrap/css/bootstrap-responsive.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/bootstrap/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/suit/bootstrap/dist/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/news/suit/bootstrap/dist/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/bootstrap/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/suit/bootstrap/dist/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/news/suit/bootstrap/dist/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/bootstrap/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/suit/bootstrap/dist/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/news/suit/bootstrap/dist/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/bootstrap/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/suit/bootstrap/dist/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/news/suit/bootstrap/dist/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/bootstrap/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/suit/bootstrap/dist/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/news/suit/bootstrap/dist/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/bootstrap/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/suit/bootstrap/dist/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/news/suit/bootstrap/dist/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/bootstrap/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/news/bootstrap/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/suit/bootstrap/dist/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/news/suit/bootstrap/dist/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/bootstrap/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/news/bootstrap/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/suit/bootstrap/dist/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/news/suit/bootstrap/dist/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/suit/bootstrap/dist/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/news/suit/bootstrap/dist/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/news/suit/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/suit/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/news/suit/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/news/suit/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/news/suit/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/news/google6e938c473442e878.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/news/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/news/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/static/bootstrap/js/npm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_project/static/suit/bootstrap/dist/js/npm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/news/suit/bootstrap/dist/js/npm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/yandex_66b4ccf6172981f4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/news/yandex_66b4ccf6172981f4.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/articles/templates/articles/articles.html" afterPath="$PROJECT_DIR$/articles/templates/articles/articles.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/models.py" afterPath="$PROJECT_DIR$/database/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/templates/database/resources.html" afterPath="$PROJECT_DIR$/database/templates/database/resources.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/rog-on-django.iml" afterPath="$PROJECT_DIR$/.idea/rog-on-django.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_project/static/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/django_project/static/bootstrap/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/articles/templates/articles/detail.html" afterPath="$PROJECT_DIR$/articles/templates/articles/detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_project/static/news/main.css" afterPath="$PROJECT_DIR$/django_project/static/news/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nginx.conf" afterPath="$PROJECT_DIR$/nginx.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_project/settings.py" afterPath="$PROJECT_DIR$/django_project/settings.py" />
     </list>
     <ignored path="rog-on-django.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,22 +165,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articles.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="articles.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/articles/templates/articles/articles.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49898168" vertical-offset="61" max-vertical-offset="595">
-              <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-              <folding />
+            <state vertical-scroll-proportion="-10.730769" vertical-offset="61" max-vertical-offset="612">
+              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="detail.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/articles/templates/articles/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.34623218" vertical-offset="0" max-vertical-offset="493">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,7 +218,6 @@
         <option value="$PROJECT_DIR$/django_project/settings.pye" />
         <option value="$PROJECT_DIR$/news/urls.py" />
         <option value="$PROJECT_DIR$/articles/views.py" />
-        <option value="$PROJECT_DIR$/articles/templates/articles/detail.html" />
         <option value="$PROJECT_DIR$/news/admin.py" />
         <option value="$PROJECT_DIR$/articles/admin.py" />
         <option value="$PROJECT_DIR$/news/templates/news/detail.html" />
@@ -175,6 +236,7 @@
         <option value="$PROJECT_DIR$/database/templates/database/resources.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/articles/templates/articles/articles.html" />
+        <option value="$PROJECT_DIR$/articles/templates/articles/detail.html" />
       </list>
     </option>
   </component>
@@ -1143,19 +1205,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/articles/templates/articles/detail.html">
+    <entry file="file://$PROJECT_DIR$/articles/templates/articles/articles.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="-10.730769" vertical-offset="61" max-vertical-offset="612">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/articles/templates/articles/articles.html">
+    <entry file="file://$PROJECT_DIR$/articles/templates/articles/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49898168" vertical-offset="61" max-vertical-offset="595">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-          <folding />
+        <state vertical-scroll-proportion="0.34623218" vertical-offset="0" max-vertical-offset="493">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

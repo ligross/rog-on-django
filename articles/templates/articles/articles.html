@@ -4,18 +4,18 @@
 
 {% block content %}
 
-{% if latest_articles_list_list %}
+{% if latest_articles_list %}
     {% for article in latest_articles_list %}
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3><a href="/articles/{{ article.id }}/">{{ article.news_title }}</a></h3>
+                <h3><a href="/articles/{{ article.id }}/">{{ article.article_title }}</a></h3>
             </div>
             <p class="date">{{ article.pub_date }}</p>
             <div class="addthis_sharing_toolbox"></div>
             <div class="newsInfo">
                 <div class="panel-body">
-                    {{ article.article_text|truncatechars:200}}...
-                    <a href="/articles/{{ article.id }}/">Читать дальше</a>
+                    {{ article.article_text|truncatechars_html:1000|safe }}
+                    <a href="/articles/{{ article.id }}/" style="float: left;">Читать дальше</a>
                     <div style="clear:both;"></div>
                 </div>
 			</div>
