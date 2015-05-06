@@ -1,15 +1,24 @@
 from django.contrib import admin
 from django.db import models
 
+from suit_ckeditor.widgets import CKEditorWidget
 
-from .models import ResourceNode, Resource
+from .models import Page, PageImage
 
 
-class ResourceInline(admin.StackedInline):
-    model = Resource
+class PageImageInLine(admin.TabularInline):
+    model = PageImage
     extra = 3
 
-class ResourceNodeAdmin(admin.ModelAdmin):
-    inlines = [ResourceInline]
 
-admin.site.register(ResourceNode, ResourceNodeAdmin)
+class PageAdmin(admin.ModelAdmin):
+    inlines = [PageImageInLine, ]
+    readonly_fields=('id',)
+    fields = ('id', 'page_title')
+    formfield_overrides = {
+        models.TextField: {'widget': CKEditorWidget},
+    }
+
+
+
+admin.site.register(Page, PageAdmin)
