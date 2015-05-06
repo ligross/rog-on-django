@@ -8,7 +8,7 @@
             <h3>{{ news.news_title }}</h3>
         </div>
         <p class="date">{{ news.pub_date }}</p>
-        <div class="addthis_sharing_toolbox"></div>
+        <div class="addthis_sharing_toolbox" data-title="{{ news.news_title }}"></div>
         <div class="newsInfo">
             <div class="panel-body">
                 {{ news.news_text|safe }}

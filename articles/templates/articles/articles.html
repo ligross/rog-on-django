@@ -11,7 +11,6 @@
                 <h3><a href="/articles/{{ article.id }}/">{{ article.article_title }}</a></h3>
             </div>
             <p class="date">{{ article.pub_date }}</p>
-            <div class="addthis_sharing_toolbox"></div>
             <div class="newsInfo">
                 <div class="panel-body">
                     {{ article.article_text|truncatechars_html:1000|safe }}
