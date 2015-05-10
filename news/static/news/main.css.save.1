@@ -1,0 +1,312 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: white url('images/background.jpg') no-repeat center top fixed;
+  background-size: cover;
+  font-family: 'Trebuchet MS',Arial,sans-serif;
+}
+
+.topMenu {
+  width: 100%;
+  position: fixed;
+  z-index: 25;
+  border-radius: 5px;
+  background-color: #333;
+  border-color: #080808;
+  height: 40px;
+}
+
+.topMenu ul {
+  padding: 0;
+  margin: 0;
+  height: 30px;
+}
+
+.newsInfo {
+  background-color: rgb(210, 210, 210);
+  margin: 0 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.5) inset;
+}
+
+.topMenu li {
+  list-style-type: none;
+  display: inline-block;
+  float: left;
+}
+
+.topMenu li a {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: #9d9d9d;
+  height: 30px;
+  padding: 10px 10px 0 10px;
+}
+
+.topMenu li a:hover {
+  color: #fff;
+}
+
+.topMenu li .active {
+  background-color: #222;
+  color: #fff;
+}
+
+.right {
+  position: fixed;
+  width: 75px;
+  height: 100%;
+  right: 0;
+  background-color: rgb(226, 226, 226);
+  z-index: 20;
+}
+
+#content_articles, #content_db, #content_video, #content_gallery {
+  display: none;
+}
+
+.tab-content {
+  z-index: 1;
+  margin-right: 75px;
+  min-height: 100%;
+}
+
+.center {
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(255,255,255,0.6);
+  color: #000;
+  margin-bottom: 100px;
+}
+
+.panel-heading h3 {
+  font-weight: bold;
+}
+
+.centerCarousel {
+  width: 70%;
+  margin: auto;
+  padding: 20px 20px 0 20px;
+  background-color: rgba(255,255,255,0.6);
+  color: #000;
+}
+
+.well {
+    background-color: rgba(240, 240, 240, 0.5)!important;
+}
+
+
+
+.centerTop {
+  width: 70%;
+  height: 200px;
+  margin: auto;
+  padding: 40px 20px 20px 20px;
+}
+
+.news {
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+.date {
+    padding: 10px;
+    margin: 0;
+}
+
+.newsInfo img {
+    width: 166px;    float: left;    margin-right: 10px;
+}
+
+.news h2 {
+    margin: 0 0 10px 0;
+}
+
+/* Кнопка ВВЕРХ*/
+#back-top {position: fixed; bottom: 10px; right: 0; cursor: pointer;z-index: 1000;margin-right: 11px;}
+#back-top img {width:50px;height:50px;opacity: 0.4;border-radius: 25px;}
+#back-top img:hover{opacity: 1;}
+/* END Кнопка ВВЕРХ*/
+
+.addthis_sharing_toolbox {
+    margin: -37px 8px 0 0;
+    float: right;
+}
+.addthis_sharing_toolbox #atstbx a {
+    border-radius: 5px;
+}
+
+.carousel-control {
+  display: none;
+}
+
+.item {
+  width: 100%;
+  height: 300px;
+}
+
+.item img {
+  width: 100%;
+  height: 300px!important;
+}
+
+.panel.panel-default table {
+  margin: 10px;
+}
+
+.panel.panel-default td {
+  border: 1px solid black;
+}
+
+.titleDb div {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    min-height: 75px;
+    text-align: center;
+}
+
+.source {
+  width: 15%;
+  min-width: 100px;
+}
+
+.titleDb {
+    width: 100%;
+}
+
+.imgsource {
+    width: 10%;
+    min-width: 130px;
+}
+
+.resources {
+    width: 20%;
+    min-width: 80px;
+}
+
+.mount {
+  width: 10%;
+  min-width: 110px;
+}
+
+.timeRessurection {
+  width: 10%;
+  min-width: 90px;
+}
+
+.locations {
+  width: 10%;
+  min-width: 170px;
+}
+
+.db {
+    width: 100%;
+    float: left;
+}
+
+.db div {
+    float: left;
+    border: 1px solid #ddd;
+    min-height: 150px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+@media (max-width: 1220px) {
+    .locations {
+        display:none;
+    }
+}
+
+@media (max-width: 900px) {
+    .timeRessurection {
+        display:none;
+    }
+}
+
+@media (max-width: 740px) {
+    .mount {
+        display:none;
+    }
+}
+
+@media (max-width: 570px) {
+    .source {
+        min-width: 85px;
+    }
+    .imgsource {
+        min-width: 120px;
+    }
+    .resources {
+        min-width: 75px;
+    }
+    .resurcesTable {
+        width: 112%;
+    }
+}
+
+.dbPage div {
+    width: 100%;
+    text-align: center;
+    float: left;
+}
+
+.dbPage div div {
+    border: 1px solid;
+    padding: 5px 0;
+    min-height: 110px;
+}
+
+.node {
+    width: 10%!important;
+}
+
+.appearance {
+    width: 10%!important;
+    padding: 0!important;
+}
+
+.dbPage {
+    width: 1000px;
+}
+
+.resource {
+    width: 10%!important;
+    min-width: 122px;
+}
+
+.yield {
+    width: 10%!important;
+}
+
+.respawnTime {
+    width: 10%!important;
+    min-width: 110px;
+}
+
+.locations {
+    width: 10%!important;
+}
+
+.appearance img {
+    width: 98px;
+    height: 108px;
+    padding: 0!important;
+}
+
+.resource img {
+    width: 60px;
+    float: left;
+    padding: 0;
+    margin: 18px auto;
+}
+.dbHeader div {
+  min-height: 55px!important;
+}
