@@ -1,3 +1,4 @@
+
 $(function() {
     var url = window.location;
     $('#categories a[href="' + url.pathname + '"]').parent().addClass('active');

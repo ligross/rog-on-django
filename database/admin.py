@@ -13,8 +13,6 @@ class PageImageInLine(admin.TabularInline):
 
 class PageAdmin(admin.ModelAdmin):
     inlines = [PageImageInLine, ]
-    readonly_fields=('id',)
-    fields = ('id', 'page_title')
     formfield_overrides = {
         models.TextField: {'widget': CKEditorWidget},
     }

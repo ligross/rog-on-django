@@ -21,7 +21,7 @@ class Page(models.Model):
 
 class PageImage(models.Model):
     page = models.ForeignKey(Page, related_name='images')
-    image = models.ImageField(u'Изображение')
+    image = models.ImageField(u'Изображение', upload_to='database', default=None, blank=True, null=True)
 
 
 class ResourceNode(models.Model):
