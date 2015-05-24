@@ -41,7 +41,13 @@ INSTALLED_APPS = (
     'news',
     'articles',
     'database',
-    'addthis'
+    'addthis',
+    'social_auth',
+)
+
+AUTHENTICATION_BACKENDS = (
+    'social_auth.backends.contrib.vk.VKOAuth2Backend',
+    'django.contrib.auth.backends.ModelBackend',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -67,6 +73,7 @@ TEMPLATES = [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
+                'social_auth.context_processors.social_auth_by_type_backends',
                 'django.contrib.messages.context_processors.messages',
                 'django.core.context_processors.request',
                 'django.core.context_processors.static'
@@ -106,6 +113,16 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+VK_APP_ID = '4643136'
+VK_API_SECRET = '7DgLhb9QGji79WNfYpQU'
+
+LOGIN_URL = '/'
+LOGIN_REDIRECT_URL = '/'
+LOGIN_ERROR_URL = '/login-error/'
+LOGOUT_URL = '/logout'
+
+SOCIAL_AUTH_SANITIZE_REDIRECTS = False
 
 
 # Static files (CSS, JavaScript, Images)
