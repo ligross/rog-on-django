@@ -21,6 +21,7 @@ urlpatterns = patterns('',
     url(r'^logout$', 'django.contrib.auth.views.logout_then_login', name='logout'),
     url(r'^articles/', include('articles.urls')),
     url(r'^database/', include('database.urls')),
+    url(r'^comments/', include('django_comments.urls')),
 )
 
 if settings.DEBUG:

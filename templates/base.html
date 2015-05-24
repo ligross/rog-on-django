@@ -1,5 +1,6 @@
 {% load staticfiles %}
 {% load addthis %}
+{% load comments %}
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Language" content="ru" />
@@ -28,10 +29,13 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li>{{ user }}</li>
-                <li><a href="/"><span class="glyphicon glyphicon-user"></span> Зарегистрироваться</a></li>
-                <li><a href="#login" data-toggle="modal" data-target="#login"><span class="glyphicon glyphicon-log-in"></span> Войти</a></li>
-                <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-out" ></span> Выйти</a></li>
+                <!-- <li><a href="/"><span class="glyphicon glyphicon-user"></span> Зарегистрироваться</a></li> -->
+            <li>{{ user }}</li>
+                {% ifequal  user "AnonymousUser" %}
+                    <li><a href="{% url 'socialauth_begin' 'vk-oauth' %}"><span class="glyphicon glyphicon-log-in"></span> Войти через VK</a></li>
+                {% else %}
+                    <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-out" ></span> Выйти</a></li>
+                {% endifequal %}
             </ul>
         </div>
     </div>
@@ -144,11 +148,9 @@
             </div>
         </div>
         <hr>
-
         <div>
             <p>© Reign of Geeks 2015</p>
         </div>
     </footer>
 </div>
-{% addthis_widget %}
 </body>

@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load comments %}
 
 {% block title %}Новости{% endblock %}
 
@@ -19,6 +20,16 @@
             Источник: <a href="{{ news.link_to_original }}">{{ news.link_to_original }}</a>
         </div>
     </div>
+            {% get_comment_list for news as comment_list %}
+{% for comment in comment_list %}
+<p>Posted by: {{ comment.user_name }} on {{ comment.submit_date }}</p>
+...
+<p>Comment: {{ comment.comment }}</p>
+...
+{% endfor %}
+    {% render_comment_form for news %}
 {% endblock %}
+
+
 
 
